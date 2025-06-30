@@ -6,7 +6,7 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Axios default config
-axios.defaults.baseURL = 'http://localhost:5038/api';
+axios.defaults.baseURL = 'https://trabalho-2-mashup-apis-a-ecgm-backend.onrender.com/api';
 const token = localStorage.getItem('token');
 if (token) {
   axios.defaults.headers.common['Authorization'] = 'Bearer ' + token;
